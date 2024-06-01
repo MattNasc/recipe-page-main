@@ -1,161 +1,162 @@
+@import './variables.scss';
+
 .recipe {
     display: flex;
     justify-content: center;
     padding: 0;
-  
+
     @media only screen and (min-width: 768px) {
-      padding: 123px 0;
+        padding: 123px 0;
     }
-  
+
     &__card {
-      background-color: #ffffff;
-      display: flex;
-      flex-direction: column;
-      width: 100%;
-  
-      @media only screen and (min-width: 768px) {
-        border-radius: 24px;
-        padding: 40px 32px;
-        max-width: 736px;
-      }
+        background-color: $color-white;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        @media only screen and (min-width: 768px) {
+            border-radius: $border-radius-default;
+            padding: 40px 32px;
+            max-width: 736px;
+        }
     }
-  
+
     &__image {
-      object-fit: cover;
-      height: 171px;
-      width: 100%;
-  
-      @media only screen and (min-width: 768px) {
-        height: auto;
-      }
+        object-fit: cover;
+        height: 171px;
+        width: 100%;
+
+        @media only screen and (min-width: 768px) {
+            height: auto;
+        }
     }
-  
+
     &__body {
-      padding: 40px 32px;
-  
-      @media only screen and (min-width: 768px) {
-        padding: 0px;
-        padding-top: 40px;
-      }
+        padding: 40px 32px;
+
+        @media only screen and (min-width: 768px) {
+            padding: 0px;
+            padding-top: 40px;
+        }
     }
-  
+
     &__title {
-      font-family: 'YoungSerif';
-      font-size: 36px;
-      margin-bottom: 24px;
+        font-family: $font-family-primary;
+        font-size: $font-size-large;
+        margin-bottom: $margin-default;
     }
-  
+
     &__description {
-      color: #5f564d;
-      font-size: 16px;
-      line-height: 150%;
-      margin-bottom: 24px;
+        color: $color-secondary;
+        font-size: $font-size-regular;
+        line-height: 150%;
+        margin-bottom: $margin-default;
     }
-  
+
     &__prepareTime {
-      background-color: #fff7fb;
-      padding: 24px 32px;
-      margin-bottom: 32px;
-      margin-top: 8px;
+        background-color: $color-primary-light;
+        padding: $padding-default 32px;
+        margin-bottom: 32px;
+        margin-top: 8px;
     }
-  
+
     &__listTitle,
     &__subtitle {
-      color: #7a284e;
-      font-weight: 600;
-      font-size: 20px;
-      margin-bottom: 16px;
+        color: $color-primary;
+        font-weight: 600;
+        font-size: $font-size-medium;
+        margin-bottom: 16px;
     }
-  
+
     &__list,
     &__listNumber,
     &__ingredients {
-      display: flex;
-      flex-direction: column;
-      gap: 8px;
-      color: #5f564d;
-      padding-bottom: 32px;
-      margin-bottom: 32px;
-      border-bottom: 1px solid #e3ddd7;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        color: $color-secondary;
+        padding-bottom: 32px;
+        margin-bottom: 32px;
+        border-bottom: 1px solid $color-secondary-light;
     }
-  
+
     &__item {
-      display: flex;
-      position: relative;
-      line-height: 150%;
-      color: #5f564d;
-  
-      span {
-        color: #5f564d;
-        font-weight: 700;
-      }
-  
-      &::before {
-        align-self: center;
-        content: "";
-        background-color: #7a284e;
-        border-radius: 50%;
-        display: inline-block;
-        height: 4px;
-        width: 4px;
-        margin-left: 8px;
-        margin-right: 28px;
-      }
+        display: flex;
+        position: relative;
+        line-height: 150%;
+        color: $color-secondary;
+
+        span {
+            color: $color-secondary;
+            font-weight: 700;
+        }
+
+        &::before {
+            align-self: center;
+            content: "";
+            background-color: $color-primary;
+            border-radius: 50%;
+            display: inline-block;
+            height: 4px;
+            width: 4px;
+            margin-left: 8px;
+            margin-right: 28px;
+        }
     }
-  
+
     &__itemNumber {
-      position: relative;
-      line-height: 150%;
-      margin-left: 35px;
-  
-      &::before {
-        content: counter(list-item)".";
-        color: #854632;
-        position: absolute;
-        font-weight: 700;
-        left: -30px;
-      }
-  
-      span {
-        color: #5f564d;
-        font-weight: 700;
-      }
+        position: relative;
+        line-height: 150%;
+        margin-left: 35px;
+
+        &::before {
+            content: counter(list-item) ".";
+            color: $color-primary-dark;
+            position: absolute;
+            font-weight: 700;
+            left: -30px;
+        }
+
+        span {
+            color: $color-secondary;
+            font-weight: 700;
+        }
     }
-  
+
     &__subtitle {
-      color: #854632;
-      font-family: 'YoungSerif';
-      font-size: 28px;
+        color: $color-primary-dark;
+        font-family: $font-family-primary;
+        font-size: 28px;
     }
-  
+
     &__nutrition {
-      padding-bottom: 32px;
+        padding-bottom: 32px;
     }
-  
+
     &__nutrient {
-      border-bottom: 1px solid #e3ddd7;
-      display: flex;
-      justify-content: flex-start;
-      padding: 12px 0 12px 32px;
-  
-      &:last-child {
-        border-bottom: 0px;
-      }
+        border-bottom: 1px solid $color-secondary-light;
+        display: flex;
+        justify-content: flex-start;
+        padding: 12px 0 12px 32px;
+
+        &:last-child {
+            border-bottom: 0px;
+        }
     }
-  
+
     &__nutrientTitle {
-      color: #5f564d;
-      font-size: 16px;
-      width: 115px;
-  
-      @media only screen and (min-width: 768px) {
-        width: 288px;
-      }
+        color: $color-secondary;
+        font-size: $font-size-regular;
+        width: 115px;
+
+        @media only screen and (min-width: 768px) {
+            width: 288px;
+        }
     }
-  
+
     &__nutrientValue {
-      color: #854632;
-      font-weight: 700;
+        color: $color-primary-dark;
+        font-weight: 700;
     }
-  }
-  
+}
