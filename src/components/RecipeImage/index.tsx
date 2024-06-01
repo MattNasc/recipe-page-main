@@ -1,4 +1,3 @@
-import './RecipeImage.scss';
 
 interface RecipeImageProps {
     src: string;

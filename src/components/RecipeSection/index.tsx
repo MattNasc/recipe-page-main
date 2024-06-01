@@ -1,5 +1,4 @@
 import React from 'react';
-import './RecipeSection.scss';
 
 interface RecipeSectionProps {
     title: string;
@@ -7,7 +6,7 @@ interface RecipeSectionProps {
     ordered?: boolean;
 }
 
-const RecipeSection = ({ title, children, ordered = false }:RecipeSectionProps) => (
+const RecipeSection = ({ title, children, ordered = false }: RecipeSectionProps) => (
     <section className="recipe__section">
         <h2 className="recipe__subtitle">{title}</h2>
         {ordered ? <ol className="recipe__listNumber">{children}</ol> : <ul className="recipe__list">{children}</ul>}

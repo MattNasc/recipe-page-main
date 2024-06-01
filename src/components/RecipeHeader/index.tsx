@@ -1,4 +1,3 @@
-import './RecipeHeader.scss';
 
 interface RecipeHeaderProps {
     title: string;

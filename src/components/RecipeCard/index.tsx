@@ -3,7 +3,6 @@ import RecipeHeader from '../RecipeHeader';
 import RecipeImage from '../RecipeImage';
 import RecipeList from '../RecipeList';
 import RecipeSection from '../RecipeSection';
-import './RecipeCard.scss';
 
 interface RecipeCardProps {
     recipe: {

@@ -1,5 +1,4 @@
 import React from 'react';
-import './RecipeItem.scss';
 
 interface RecipeItemProps {
     item: string | { label?: string; time?: string; step?: string; detail?: string; value?: string };
